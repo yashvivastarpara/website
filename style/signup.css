@@ -1,3 +1,7 @@
+body{
+    background-color: rgba(124, 124, 124, 0.248);
+}
+
 #nav {
     display: flex;
     justify-content: space-evenly;
@@ -20,18 +24,22 @@ form#form {
     color: rgb(0, 0, 0);
     padding: 53px;
 }
+h1#h1-sign {
+    margin: 0px;
+}
 .input-tag {
     margin: 7px;
     background-color: #4e4f4a35;
     border-radius: 10px;
     width: 52%;
-    padding: 15px;
+    padding: 11px;
     border: 2px solid;
 }
 .submit-btn {
-    background-color: black;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: #cb113fc9;
     color: aliceblue;
-    border-radius: 5px;
-    width: 15%;
+    border-radius: 9px;
+    width: 56%;
     padding: 10px;
 }
