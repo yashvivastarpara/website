@@ -1,9 +1,15 @@
 document.querySelector("form").addEventListener("submit", function(event){
     event.preventDefault();
-    let user={
-    email : document.getElementById("email").Value,
-    password : document.getElementById("password").Value,
-    };
-    localStorage.setItem("user", JSON.stringify(user));
+    let user=JSON.parse(localStorage.getItem("user"));
     console.log(user);
+    let email = document.getElementById("email").Value;
+    let password = document.getElementById("password").Value;
+
+    if(email== user.email && password== user.password){
+        alert("Please enter");
+        window.location.href="/style/website.css"
+    }
+    else{
+        alert("Invalid email");
+    }
 })
