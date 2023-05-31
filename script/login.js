@@ -7,9 +7,9 @@ document.querySelector("form").addEventListener("submit", function(event){
 
     if(email== user.email && password== user.password){
         alert("Please enter");
-        window.location.href="/style/website.css"
+        window.location.href="../website.html";
     }
     else{
         alert("Invalid email");
     }
-})
+})  
