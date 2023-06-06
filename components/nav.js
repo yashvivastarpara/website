@@ -1,5 +1,5 @@
 const nav=()=>{
-    return`<a href="../index.html"><p>home</p></a>
+    return`<a href="../index.html"><p>Home</p></a>
     <a href="../pages/products.html"><p>Products</p></a>
     <a href="../pages/cart.html"><p>cart</p></a>
     <a href="../pages/login.html"><p>login</p></a>

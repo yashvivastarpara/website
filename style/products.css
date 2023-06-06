@@ -26,4 +26,53 @@ img{
 .d-block{
     width: 100%;
     height: 50%;
+} 
+#parent-div {
+    display: flex;
+    ;
 }
+#category {
+    border: 1px solid black;
+    width: 20%;
+    height: 100vh;
+}
+#products {
+    border: 1px solid black;
+    width: 80%;
+    height: 100vh;
+    display: grid;
+    padding: 40px 40px;
+    grid-template-columns: repeat(2, 1fr);
+}
+img {
+    width: 50%;
+    height: 50%;
+}
+h1 {
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+p {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    font-size: 27px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+    padding: 5px;
+    font-size: 15px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+
+
