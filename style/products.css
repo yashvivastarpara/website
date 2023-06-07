@@ -153,3 +153,12 @@ button {
 .rate{
     font-size: 20px;
 }
+.img-pro{
+    width: px!important;
+}
+
+.main-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+}
