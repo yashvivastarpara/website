@@ -27,6 +27,7 @@ let show = (data) => {
       document.getElementById("products").append(div);
       btn.addEventListener("click", () => {
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        console.log(cart);
         let exists = false;
         cart.map((item, idx) => {
           if (item.id == ele.id) {
