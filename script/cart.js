@@ -7,6 +7,7 @@ let show = (data) => {
       let img = document.createElement("img");
       img.src = ele.image;
       img.setAttribute("class","imgesss");
+      
       let title = document.createElement("h3");
       title.setAttribute("class","titless");
       title.innerHTML = ele.title;
