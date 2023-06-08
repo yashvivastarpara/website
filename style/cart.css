@@ -46,10 +46,11 @@ img{
     display: flex;
 }
 button.add {
-    width: 5%;
+    width: 6%;
     margin: 31px;
     margin-right: -10px;
-    height: 5%;
+    height: 6%;
+    font-size: 23px;
     margin-left: 44px;
     font-weight: 600;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -60,10 +61,12 @@ button.add {
     border: 2px solid black;
 }
 button.remove {
-    width: 5%;
+    width: 6%;
     margin: 31px;
-    margin-left: -9px;
-    height: 5%;
+    margin-right: -10px;
+    height: 6%;
+    font-size: 23px;
+    margin-left: 44px;
     font-weight: 600;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     background-color: #cb113fc9;
