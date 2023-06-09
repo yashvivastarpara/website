@@ -4,6 +4,7 @@ document.getElementById("nav").innerHTML=nav()
 let show = (data) => {
     console.log(data);  
     data.map((ele) => {
+      
       let img = document.createElement("img");
       img.src = ele.image;
       img.setAttribute("class","imgesss");
