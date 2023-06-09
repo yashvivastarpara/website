@@ -39,8 +39,6 @@ img{
     display: flex;
     width: 33%;
     padding: 23px;
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 .cartdiv {
     display: flex;
