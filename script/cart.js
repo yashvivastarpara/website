@@ -64,24 +64,28 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [];
 show(cart);
 
 cartui(cart);
-let ui=()=>{
+
+let ui = () => {
   let parent2 = document.createElement("div");
-  let lable = document.createElement("lable");
-  lable.innerHTML = "code:";
-  let lable2 = document.createElement("lable2");
-  lable2.innerHTML = "price:";
-  let promocode = document.createElement("promocode");
-  promocode.Placeholder = "Enter in promo code";
-  promocode.setAttribut("class", "promocode");
+  let lable = document.createElement("label");
+  lable.innerHTML = "Promo Code:";
+  let lable2 = document.createElement("label");
+  lable2.innerHTML = "Totle Price:";
+  let promocode = document.createElement("input");
+  promocode.placeholder = "enter your promo code";
+  promocode.setAttribute("class", "promocode");
   let dprice = document.createElement("p");
 
-  let apply = document.createElement("Sub");
-  apply.innerHTML = "enter the apply";
-  apply.setAttribute("class", "enter the apply");
-
+  let apply = document.createElement("submit");
+  apply.innerHTML = "enter";
+  apply.setAttribute("class", "enter");
   parent2.append(lable, promocode, apply);
   document.getElementById("page").append(parent2);
   document.getElementById("price").append(lable2, totalprice);
+
+  parent2.setAttribute("class", "parent2");
+
+  lable.setAttribute("class", "lable");
 
   parent2.setAttribute("class", "parent2");
   lable.setAttribute("class", "lable");
@@ -91,9 +95,9 @@ let ui=()=>{
     if (e.key == "Enter") {
       console.log(promocode.value);
       if (promocode.value == "code20") {
-        totalprice -= totalprice / 100 + 20;
+        totalprice -= (totalprice / 100) * 20;
         console.log(totalprice);
-        dprice.innerHTML = `final price: ${totalprice}`;
+        dprice.innerHTML = `Final price :${totalprice}`;
         parent2.append(dprice);
         dprice.setAttribute("class", "dprice");
       }
@@ -101,6 +105,7 @@ let ui=()=>{
   });
 
   let price = "";
+
   for (let i = 1; i < totalprice.length; i++) {
     price += totalprice[i];
   }
