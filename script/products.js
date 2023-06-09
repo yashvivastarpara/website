@@ -56,4 +56,4 @@ let show = (data) => {
   };
   fetch("https://fakestoreapi.com/products")
   .then((response) => response.json())
-  .then((data) => show(data));  
+  .then((data) => show(data))

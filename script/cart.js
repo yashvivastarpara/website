@@ -63,7 +63,7 @@ let show = (data) => {
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 show(cart);
 
-cartui (cart);
+cartui(cart);
 let ui=()=>{
   let parent2 = document.createElement("div");
   let lable = document.createElement("lable");
