@@ -9,25 +9,32 @@ let show = (data) => {
       let img = document.createElement("img");
       img.src = ele.image
       img.setAttribute("class","img-pro");
+
       let title = document.createElement("h3");
       title.innerHTML = ele.title;
+
       let price = document.createElement("p");
       price.innerHTML = ele.price;
+
       let category = document.createElement("p");
       category.innerHTML = ele.category;
-      // let rating = document.createElement("h5");
-      // rating.innerHTML = ele.rating;
+
       let btn = document.createElement("button");
       btn.innerHTML = "add to cart";
+
       let btn2 = document.createElement("button");
       btn2.innerHTML = "but now";
+
       let divbtn = document.createElement("div");
       divbtn.append(btn, btn2);
       divbtn.setAttribute("class", "divbtn");
+
       let div = document.createElement("div");
       div.append(img, title, price, category, divbtn);
       div.setAttribute("class", "main-div");
+
       document.getElementById("products").append(div);
+      
       btn.addEventListener("click", () => {
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
         console.log(cart);
