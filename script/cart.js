@@ -1,6 +1,20 @@
 import nav from "../components/nav.js";
 
 document.getElementById("nav").innerHTML = nav();
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+// /total price logic
+
+let totalprice=0;
+cart.map((ele)=>{
+  totalprice=ele.price*ele.qty
+})
+
+
+
+
+
 let show = (data) => {
   console.log(data);
   data.map((ele, index) => {
@@ -60,17 +74,17 @@ let show = (data) => {
   });
 };
 
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
 show(cart);
 
-cartui(cart);
+// cartui(cart);
 
 let ui = () => {
   let parent2 = document.createElement("div");
   let lable = document.createElement("label");
   lable.innerHTML = "Promo Code:";
   let lable2 = document.createElement("label");
-  lable2.innerHTML = "Totle Price:";
+  lable2.innerHTML = `Totle Price:${totalprice}`;
+
   let promocode = document.createElement("input");
   promocode.placeholder = "enter your promo code";
   promocode.setAttribute("class", "promocode");
@@ -81,7 +95,7 @@ let ui = () => {
   apply.setAttribute("class", "enter");
   parent2.append(lable, promocode, apply);
   document.getElementById("page").append(parent2);
-  document.getElementById("price").append(lable2, totalprice);
+  document.getElementById("price").append(lable2);
 
   parent2.setAttribute("class", "parent2");
 
@@ -104,11 +118,7 @@ let ui = () => {
     }
   });
 
-  let price = "";
 
-  for (let i = 1; i < totalprice.length; i++) {
-    price += totalprice[i];
-  }
-  document.getElementById("price").append(price);
-};
+
+}
 ui();
