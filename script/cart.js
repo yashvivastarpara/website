@@ -11,10 +11,6 @@ cart.map((ele)=>{
   totalprice=ele.price*ele.qty
 })
 
-
-
-
-
 let show = (data) => {
   console.log(data);
   data.map((ele, index) => {
