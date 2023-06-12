@@ -4,8 +4,6 @@ document.getElementById("nav").innerHTML = nav();
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-// /total price logic
-
 let totalprice=0;
 cart.map((ele)=>{
   totalprice=ele.price*ele.qty
@@ -113,8 +111,14 @@ let ui = () => {
       }
     }
   });
-
-
-
 }
 ui();
+
+// let totalprice=0;
+// cart.map((item)=>{
+//   totalprice +=item.price*item.qty 
+// })
+// console.log(totalprice);
+
+// document.getElementById("price").innerHTML=`Total price :${totalprice}`;
+
