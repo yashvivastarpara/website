@@ -85,7 +85,8 @@ let ui = () => {
   let dprice = document.createElement("p");
 
   let apply = document.createElement("submit");
-  apply.innerHTML = "enter";
+  apply.innerHTML = "submite";
+  
   apply.setAttribute("class", "enter");
   parent2.append(lable, promocode, apply);
   document.getElementById("page").append(parent2);
@@ -97,7 +98,8 @@ let ui = () => {
 
   parent2.setAttribute("class", "parent2");
   lable.setAttribute("class", "lable");
-
+  parent2.setAttribute("class", "parent2");
+  
   promocode.addEventListener("keypress", (e) => {
     console.log(e.key);
     if (e.key == "Enter") {

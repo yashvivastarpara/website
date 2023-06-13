@@ -2,7 +2,6 @@ body {
     display: block;
     margin: 0px;
 }
-
 #nav {
     display: flex;
     justify-content: space-evenly;
@@ -32,7 +31,7 @@ img{
     margin: 20px;
     width: 13%;
     display: flex;
-    padding: 25px;
+    padding: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .titless {
@@ -43,6 +42,7 @@ img{
 }
 .cartdiv {
     display: flex;
+    width: 135%;
 }
 button.add {
     width: 5.3%;
@@ -74,6 +74,7 @@ button.remove {
 }
 div#cart {
     padding-top: 70px;
+    width: 70%;
 }
 p.pricess {
     font-size: 25px;
@@ -86,4 +87,27 @@ p.pricess {
     margin: 32px;
     margin-top: 130px;
     font-size: 23px;
+}
+div#main-pg {
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+div#page {
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+h1#price {
+    padding-top: 90px;
+    padding-left: 17px;
+}
+h1#price {
+    padding-top: 90px;
+    padding-left: 17px;
+}
+.parent2 {
+    margin-left: 20px;
+} 
+submit.enter {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 }
